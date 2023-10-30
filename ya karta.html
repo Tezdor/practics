@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class carta {
+
+constructor(name, mast, number, color) {
+  this.name = name;
+  this.mast = mast;
+  this._number = number;
+  this.color = color;
+}
+static coloda = 'все карты находятся в одной колоде';
+static _rybashka = 'grid';
+static #color = 'red , black';
+#name = name;
+static alertjoker(){
+    console.log(joker.mast);
+    console.log(joker.color);
+    console.log(joker.name);
+}
+static #ypast(){
+    console.log('карта упала');
+}
+static _bito(){
+    console.log('карта попала в биту');
+}
+#win(){
+    console.log('карта побила другую карту');
+}
+_lose(){
+    console.log('карта побита');
+}
+alertgame(){
+    console.log('игра началась');
+}
+        }
+        
+let joker = new carta('joker', 'all', '15', 'red');
+let a = new carta('a', 'spades', '14', 'black' );
+let queen = new carta('queen', 'clubs', '12', 'black');
+let king = new carta('king', 'hearts', '13', 'red');
+let prince = new carta('prince', 'diamonds', '11', 'red');
+carta.alertjoker();
+</script>
+</body>
+</html>
