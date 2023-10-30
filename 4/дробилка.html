@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class mehanizm{
+            constructor(name) {
+    this.speed = 30;
+    this.name = name;
+    this.time = 24;
+        }
+
+    }
+    class pechka extends mehanizm {
+        plavit() {
+    alert(`${this.name} плавит`);
+  }
+}
+class drobilka extends mehanizm {
+    drobit(){
+        alert(`${this.name} дробит`)
+    }
+    
+}
+
+let pech = new pechka("каменная");
+
+console.log(pechka.time); 
+pech.plavit(); 
+
+let drobitel = new drobilka("механическая");
+
+console.log(drobilka.speed); 
+drobitel.drobit(); 
+    </script>
+</body>
+</html>
