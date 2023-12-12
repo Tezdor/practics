@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> <button onclick="get_coin()">GET COIN PLEASE</button> </div>
+    <div> <button onclick="get_collection()">GET COLLLLLLLLLLLLECTION PLEASE</button> </div>
+    <div> <button onclick="get_finish()">FINISH ME PLEEEAAAASEEEEE</button> <div id="container"></div> </div>
+    <script>
+async function get_coin(){
+    fetch('http://127.0.0.1:5000/login', {
+    method: 'post'
+}).then(response => response.text()).then(data => {
+    console.log(data);
+})
+} 
+async function get_collection(){
+    let formData = new FormData()
+formData.append('token', 'тут типа лежит твой уникальный, персональный токен (со всей любовью)')
+
+fetch('http://127.0.0.1:5000/get_cat_list', {
+    method: 'post',
+    body: formData
+}).then(response => response.json()).then(data => {
+    console.log(data);
+    })
+}
+async function get_finish(){
+    let formData = new FormData()
+formData.append('token', 'тут типа лежит твой уникальный, персональный токен (со всей любовью)')
+formData.append('code', '401')
+
+const response = fetch('http://127.0.0.1:5000/get_cat', {
+    method: 'POST',
+    body: formData
+}).then(response => response.blob()).then(data => { // blob() обозначает, что возвращается файл. Можете проверить возвращаемый тип через response.ok
+    // создаем url для картинки
+    const imageUrl = URL.createObjectURL(data);
+
+    // создаем тег img
+    const imageElement = document.createElement("img");
+    imageElement.src = imageUrl;
+
+    // добавляем созданный img внутрь container
+    document.getElementById("container").appendChild(imageElement)
+})
+}
+
+    </script>
+</body>
+</html>
