@@ -1,0 +1,25 @@
+.main{
+    font-weight: bold;
+    font-weight: 600;
+    font-weight: bolder;
+}
+
+.header{
+    font-size: 150%;  color: #740000
+}
+
+.navbar__table{
+    color: #740000;
+}
+
+.navbar__ssylki{
+    color:rgb(13, 188, 39)
+}
+
+.sidebar{
+    color:rgb(10, 207, 210)
+}
+
+.footer{
+color: #ddd;
+}

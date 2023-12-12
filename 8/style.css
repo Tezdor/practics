@@ -1,0 +1,76 @@
+label {
+    color: #bee303;
+    font-size: 100%;
+    text-align: left; 
+}
+.main__nadpis {
+    color:blanchedalmond
+}
+.footer__nadpis {
+    color:chocolate
+}
+.fnf:focus {
+    color:rgb(22, 233, 54)
+}
+a {
+    color:rgb(26, 163, 231)
+}
+a:active {
+color:#bee303
+}
+a:visited {
+    color:blueviolet
+}
+button:hover{
+    color:green
+}
+button:focus{
+    color:pink
+}
+.header {
+    font-size: 150%;  color: #740000
+}
+.navbar__ssylki {
+    color:rgb(13, 188, 39)
+}
+.navbar__table {
+    color:#280404
+}
+.sidebar {
+    color:rgb(10, 207, 210)
+}
+.main__images {
+    border: 50px solid #666;
+        padding: 10px;
+        margin: 10px;
+}
+.main__contactnayainfo{
+    color:aqua
+}
+.main__audio{
+    height:200px; width:300px; background:rgb(189, 14, 202);
+}
+.main__img{
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.main__nadpis{
+    color: #ddd;
+}
+.main__otpravka{
+    color:#ddd
+}
+.main__video{
+    width: 30rem;
+    height: 16.5rem;
+    position: relative;
+}
+.footer__nadpis{
+    color: #ddd;
+}
+.footer__iframe{
+    margin: 0;
+    padding: 0;
+}
