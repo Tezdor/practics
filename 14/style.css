@@ -1,0 +1,23 @@
+label {
+    color: #bee303;
+    font-size: 100%;
+    text-align: left; 
+}
+.fnf:focus {
+    color:rgb(22, 233, 54)
+}
+a {
+    color:rgb(26, 163, 231)
+}
+a:active {
+color:#bee303
+}
+a:visited {
+    color:blueviolet
+}
+button:hover{
+    color:green
+}
+button:focus{
+    color:pink
+}
