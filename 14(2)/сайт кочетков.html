@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 { 
+    font-size: 120%;
+    color: #510233; 
+   }
+    </style>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="14/body">
+      <link rel="stylesheet" href="header/__nadpis.css">
+      <link rel="stylesheet" href="header/navbar/__ssylki.css">
+      <link rel="stylesheet" href="header/navbar/__table.css">
+      <link rel="stylesheet" href="main/__audio.css">
+      <link rel="stylesheet" href="main/__contactnayainfo.css">
+      <link rel="stylesheet" href="main/__images.css">
+      <link rel="stylesheet" href="main/__img.css">
+      <link rel="stylesheet" href="main/__nadpis.css">
+      <link rel="stylesheet" href="main/__otravka.css">
+      <link rel="stylesheet" href="main/__video.css">
+      <link rel="stylesheet" href="sidebar/__sidebar.css">
+      <link rel="stylesheet" href="footer/__iframe.css">
+      <link rel="stylesheet" href="footer/__nadpis.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>стандартная клоунада</title>
+</head>
+<body background="background.jpg">
+    <header>
+        <div class="header">
+            <h1 class="header__nadpis">Добро пожаловать на сайт сервера "стандартная клоунада"</h1>
+        </div>
+        <nav>
+            <div class="navbar">
+                <ul class="navbar__table">
+                    <li class="navbar__ssylki"><a href="братия-имени=ивана-купалы.html"> братия-имени-ивана-купалы</a></li>
+                    <li class="navbar__ssylki"><a href="мемы.html">мемы</a></li>
+                    <li class="navbar__ssylki"><a href="contact.html">участники</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+    </header>
+
+    <aside>
+        <div class="sidebar">
+            <p class="sidebar__hz">тут ничего не будет, я не знаю, что тут нужно</p>
+        </div>
+    </aside>
+    
+    <main>
+        <div class="main">
+            
+            <h2 class="main__nadpis">Главная страница</h2>
+            <p class="main__nadpis">Добро пожаловать на сайт сервера "стандартная клоунада"</p>
+            <img class="main__img" src="кирюша.jpg" alt="кирюша" width="200" height="150">
+            <img class="main__img" src="настюша.jpg" alt="настюша" width="200" height="150">
+            <video class="main__video" width="320" height="240" controls>
+                <source src="егорка.mp4" type="video/mp4">
+            </video>
+            <video class="main__video" width="320" height="240" controls>
+                <source src="зайчик.mp4" type="video/mp4">
+            </video>
+            <video class="main__video" width="320" height="240" controls>
+                <source src="фазма.mp4" type="video/mp4">
+            </video>
+            <audio class="main__audio" controls>
+                <source src="подлая еврейская музыка.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section class="main__images">
+            <h2 class="main__nadpis">мемы</h2>
+            <img class="main__img" src="мем1.jpg" alt="мую" width="200" height="150">
+            <img class="main__img" src="мем2.jpg" alt="мау" width="200" height="150">
+        </section>
+
+        <section class="main__contactnayainfo">
+            <h2 class="main__nadpis">братия-имени-ивана-купалы</h2>
+            <form class="main__otpravka" action="submit.php" method="post">
+                <label class="main__nadpis" for="name">юзер:</label>
+                <input class="main__otpravka" type="text" id="name" name="name" required>
+
+                <label class="main__nadpis" for="email">Email:</label>
+                <input class="main__otpravka" type="email" id="email" name="email" required>
+
+                <label class="main__nadpis" for="message">Сообщение:</label>
+                <textarea class="main__otpravka" id="message" name="message" required></textarea>
+
+                <button class="main__nadpis" type="submit">Отправить</button>
+            </form>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+        <p class="footer__nadpis">&copy; стандартная клоунада</p>
+        <iframe class="footer__iframe" src="https://vk.com/podmgkit" width="150" height="100"></iframe>
+        </div>
+    </footer>
+</body>
+</html>
